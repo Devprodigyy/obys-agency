@@ -12,8 +12,8 @@ var int = setInterval(function(){
         grow++
         timer.innerHTML = grow
     }
-},40)
+},35)
 
 setTimeout(function(){
     clearInterval(int)
-},4000)
+},3500)
