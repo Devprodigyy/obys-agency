@@ -16,7 +16,7 @@ body {
     background-color: #000;
     position: fixed;
     padding-top: 15vh;
-    padding-left: 10vw;
+    padding-left: 8vw;
     z-index: 99;
 }
 .load{
@@ -24,17 +24,74 @@ body {
     overflow: hidden;
     display: flex;
     align-items: center;
+    height: 18vh;
+    /* background-color: red; */
+}
+.load:nth-child(1){
+    padding-left: 3vw;
 }
 .load h1{
     font-size: 7vw;
     text-transform: uppercase;
+}   
+.load h2{
+    font-size: 7vw;
+    margin-left: 2vw;
+    text-transform: uppercase;
+    animation-name: now;
+
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes now {
+    0%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px transparent;
+        opacity: 1;
+        color: white;
+        font-weight: 100;
+    }
+    45%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px transparent;
+        opacity: 0;
+        color: white;
+        font-weight: 100;
+    }
+    50%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px #fff;
+        opacity: 1;
+        color: transparent;
+        font-weight: 100;
+    }
+
+    95%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px #fff;
+        opacity: 0;
+        color: transparent;
+        font-weight: 100;
+    }
+    100%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px transparent;
+        opacity: 1;
+        color: white;
+        font-weight: 100;
+    }
+}
+
+
+
 #timer{
     display: flex;
     align-items: center;
     justify-content: space-between;
     /* background-color: red; */
-    margin-right: 2vw;
+    margin-right: 5vw;
     width: 16vw;
 }
 
@@ -59,16 +116,14 @@ body {
     height: 100vh;
     width: 100%;
     position: relative;
-    /* background-color: #151515; */
-    background-color: #626262;
+    background-color: #151515;
 
 }
 #page2{
     height: 100vh;
     width: 100%;
     position: relative;
-    /* background-color: #151515; */
-    background-color: #626262;
+    background-color: #151515;
 
 
 
