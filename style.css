@@ -10,6 +10,9 @@ body {
     height: 100%;
     width: 100%;
 }
+#main{
+    background-color: #151515   ;
+}
 #loader{
     height: 100vh;
     width: 100%;
@@ -235,4 +238,107 @@ body {
 }
 #play-btn i{
     font-size: 2.5vw;
+}
+
+
+#page3{
+    min-height: 100vh;
+    padding: 3vw;
+}
+
+.text-container{
+    padding-left: 28vw;
+}
+.text-container h1{
+    font-size: 7vw;
+
+
+    text-transform: uppercase;
+}
+
+.text-container .underline{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin:3vw 0;
+    
+}
+
+.image-container{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.images{
+    height: 40vw;
+    width: 30vw;
+
+    overflow: hidden;
+    margin: 2vw;
+}
+
+.images:nth-child(1){
+    height: 30vw;
+    width: 25vw;
+}
+
+.images img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.circle-container{
+    height: 22vw;
+    width: 22vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.circle-container .circle-in{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    scale: 0;
+    transition: all ease 0.5s;
+}
+
+.circle-in p{
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all ease 0.5s;
+    scale: 0;
+    transition-delay: 0.5s;
+}
+.circle-container:hover .circle-in{
+    scale: 1;
+}
+.circle-container:hover .circle-in p{
+    scale: 1;
+}
+#circle-container-1{
+    margin-top: 18vw;
+}
+#circle-container-2 svg{
+    rotate: -45deg;
+}
+
+.circle-container svg{
+    height: 120px;
+}
+._canvas_container{
+    z-index: 9999999 !important;
 }
