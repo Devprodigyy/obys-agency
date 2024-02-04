@@ -32,7 +32,7 @@ body{
     padding-left: 8vw;
     z-index: 999;
 
-    /* display: none; */
+    display: none;
 }
 .load{
     /* background-color: red; */
@@ -321,6 +321,7 @@ body{
     align-items: center;
     justify-content: center;
     padding: 40px;
+    z-index: 9;
     scale: 0;
     transition: all ease 0.5s;
 }
@@ -419,4 +420,74 @@ body{
     height: 100vh;
     width: 100%;
     background-color: var(--primary);
+    padding: 5vh 0;
+    padding-left: 28vw;
+
+}
+.footer-text{
+    position: relative;
+    /* background-color: red; */
+    height: 12vh;
+}
+#footer h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+}
+#footer h2{
+    font-weight: 100;
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-family: "silk serif";
+    position: absolute;
+    top: -8%;
+    height: 20vh;
+    /* overflow: auto; */
+    left: 0;
+    opacity: 1;
+}
+#footer h2 span{
+    /* color: red; */
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    opacity: 0;
+    font-family: "silk serif";
+
+}
+
+#footer .underline{
+    height: 2px ;
+    width: 100%;
+    margin: 5vw 0;
+    background-color: #fff;
+}
+
+
+#footer-btm{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#foot-div1{
+    width: 25%;
+    /* background-color: blue; */
+}
+#foot-div1 h6{
+    font-size: 1vw;
+    margin-bottom: 2vw;
+}
+#foot-div1 .social-div{
+    /* background-color: red; */
+    height: 2.2vw;
+    overflow: hidden;
+}
+#foot-div1 h5{
+    font-size: 1.7vw;
+    transition: all ease 0.5s;
+}
+
+.social-div:hover h5{
+    transform: translateY(-100%);
 }

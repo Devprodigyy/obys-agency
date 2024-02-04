@@ -201,3 +201,75 @@ function themeChange() {
 }
 
 themeChange()
+
+
+// var footerh1 = document.querySelector("#footer h1")
+
+// var h1Text = footerh1.textContent
+
+// var splittedFoot = h1Text.split("")
+// var clutter = ""
+// splittedFoot.forEach(function(elem){
+//     clutter += `<span>${elem}</span>`
+// })
+
+// footerh1.innerHTML = clutter
+
+
+// footerh1.addEventListener("mouseenter",function(){
+//     var footl = gsap.timeline()
+//     footl.to("#footer h1 span",{
+//         opacity:0,
+//         stagger:0.2
+//     },"anim")
+//     footl.to("#footer h1 span",{
+//         opacity:1,
+//         stagger:0.2,
+//         delay:1,
+//         fontFamily:"silk serif",
+
+//     },"anim")
+// })
+
+var footText = document.querySelectorAll("#footer .text")
+
+footText.forEach(function(elem){
+    var elemText  = elem.textContent
+    var splited = elemText.split("")
+    var clutter = ""
+    splited.forEach(function(e){
+        clutter += `<span>${e}</span>`
+    })
+    elem.innerHTML = clutter
+})
+
+
+var footerText = document.querySelector(".footer-text")
+
+footerText.addEventListener("mouseenter",function(){
+    gsap.to("#footer h1 span",{
+        opacity:0,
+        stagger:0.1,
+        duration:0.5
+    })
+    gsap.to("#footer h2 span",{
+        opacity:1,
+        delay:0.4,
+        duration:0.5,
+        stagger:0.1
+    })
+})
+
+footerText.addEventListener("mouseleave",function(){
+    gsap.to("#footer h2 span",{
+        opacity:0,
+        stagger:0.05,
+        duration:0.3
+    })
+    gsap.to("#footer h1 span",{
+        opacity:1,
+        delay:0.4,
+        duration:0.3,
+        stagger:0.05
+    })
+})
