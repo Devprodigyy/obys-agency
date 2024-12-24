@@ -11,6 +11,11 @@
     box-sizing: border-box;
     font-family:"plain light";
     color: var(--secondary);
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
+   
+
 }
 html,
 body {
@@ -187,6 +192,7 @@ body{
     /* background-color: red; */
     overflow: hidden;
     height: 7.5vw;
+
 }
 
 .text h1{
@@ -437,20 +443,26 @@ body{
     font-weight: 100;
     font-size: 7vw;
     text-transform: uppercase;
-    font-family: "silk serif";
+    /* font-family: "silk serif"; */
     position: absolute;
     top: -8%;
     height: 20vh;
     /* overflow: auto; */
     left: 0;
     opacity: 1;
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 #footer h2 span{
     /* color: red; */
     -webkit-text-stroke: 1px #fff;
     color: transparent;
     opacity: 0;
-    font-family: "silk serif";
+    /* font-family: "silk serif"; */
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
 
 }
 
@@ -491,3 +503,4 @@ body{
 .social-div:hover h5{
     transform: translateY(-100%);
 }
+
